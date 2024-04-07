@@ -1,0 +1,19 @@
+﻿@model Store.Models.QuizViewModel
+
+@{
+    ViewBag.Title = "Quiz";
+}
+
+<h2>Simple Quiz</h2>
+
+<form method="post" action="/Quiz/Index">
+    <div>
+        <p>1. What is 2 + 2?</p>
+        <input type="text" name="Answer1" required />
+    </div>
+    <div>
+        <p>2. What is the capital of France?</p>
+        <input type="text" name="Answer2" required />
+    </div>
+    <button type="submit">Submit</button>
+</form>

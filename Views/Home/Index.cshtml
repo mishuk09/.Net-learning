@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layouts</title>
+    <style>
+        .row-spacing {
+            margin-bottom: 30px; /* Adjust the value as needed for vertical spacing */
+        }
+
+        body {
+            background-color: #111;
+            color: #fff;
+        }
+
+        .card {
+            background-color: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(5px);
+            transition: transform .2s;
+        }
+
+            .card:hover {
+                transform: scale(1.05);
+                cursor: pointer;
+            }
+
+        .card-img-top {
+            opacity: 0.6;
+        }
+
+        .navbar {
+            margin-bottom: 20px;
+        }
+
+        /* Additional style for wide cards */
+        .wide-card {
+            margin-bottom: 20px; /* Space between wide cards */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <!-- First Row of Vertical Cards -->
+        <div class="row row-spacing">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="/views//images/screenshot 2022-07-12 180720.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="../Views/images/adobe.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="image1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Row of Vertical Cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="image1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 4</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="image1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="image1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Vertical Card 5</h5>
+                        <p class="card-text">Some quick example text to build on the card title.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Existing content removed for brevity -->
+        <!-- Wide Cards Section -->
+        <div class="row">
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="wide_image1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide Card 1</h5>
+                        <p class="card-text">Some more detailed example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="wide_image2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide Card 2</h5>
+                        <p class="card-text">Some more detailed example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 wide-card">
+                <div class="card">
+                    <img class="card-img-top" src="wide_image3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Wide Card 3</h5>
+                        <p class="card-text">Some more detailed example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

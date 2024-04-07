@@ -1,0 +1,70 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@* ../Views//images/adobe.jpg *@
+<h1>Result</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Quiz Result</h2>
+
+        <p class="mb-4">Your score: <span class="font-semibold text-blue-500">@ViewBag.Score</span>/10</p>
+
+        <div class="mb-4">
+            <h3 class="text-lg font-semibold">Answers:</h3>
+            <ul class="list-disc ml-4">
+                <li>
+                    <p class="mb-1 font-semibold">Question 1:</p>
+                    <p>@ViewBag.Question1 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer1</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 2:</p>
+                    <p>@ViewBag.Question2 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer2</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 3:</p>
+                    <p>@ViewBag.Question3 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer3</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 4:</p>
+                    <p>@ViewBag.Question4 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer4</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 5:</p>
+                    <p>@ViewBag.Question5 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer5</span></p>
+                </li>
+                 <li>
+                    <p class="mb-1 font-semibold">Question 6:</p>
+                    <p>@ViewBag.Question6 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer6</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 7:</p>
+                    <p>@ViewBag.Question7 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer7</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 8:</p>
+                    <p>@ViewBag.Question8 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer8</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 9:</p>
+                    <p>@ViewBag.Question9 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer9</span></p>
+                </li>
+                <li>
+                    <p class="mb-1 font-semibold">Question 10:</p>
+                    <p>@ViewBag.Question10 - <span class="text-green-500 font-semibold">@ViewBag.CorrectAnswer10</span></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

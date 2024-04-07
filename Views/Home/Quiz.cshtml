@@ -1,0 +1,64 @@
+﻿@model Store.Models.Quiz
+@* @{
+    ViewData["Title"] = "Quiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+} *@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto p-6">
+        <h2 class="text-2xl font-bold mb-4">Simple Quiz</h2>
+
+        <form method="post" asp-controller="Home" asp-action="Submit" class="bg-white shadow-md rounded-lg p-6">
+            <div class="mb-4">
+                <p class="font-semibold">1. What does "HTML" stand for?</p>
+                <input type="text" asp-for="Answer1" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">2. What programming language is often used for developing Android applications?</p>
+                <input type="text" asp-for="Answer2" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">3. Which company developed the C# programming language?</p>
+                <input type="text" asp-for="Answer3" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">4. What does "SEO" stand for in the context of websites?</p>
+                <input type="text" asp-for="Answer4" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">5. Which protocol is used for secure communication over a computer network?</p>
+                <input type="text" asp-for="Answer5" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">6. What is the purpose of a "CSS" file in web development?</p>
+                <input type="text" asp-for="Answer6" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">7. Which programming language is commonly used for data analysis and machine learning?</p>
+                <input type="text" asp-for="Answer7" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">8. What does "API" stand for in the context of software development?</p>
+                <input type="text" asp-for="Answer8" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">9. Which technology is used for creating dynamic and interactive web pages?</p>
+                <input type="text" asp-for="Answer9" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">10. What is the primary function of a "DNS" server in computer networking?</p>
+                <input type="text" asp-for="Answer10" required class="w-full mt-1 p-2 border rounded-md" />
+            </div>
+
+            <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-md hover:bg-blue-600">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
